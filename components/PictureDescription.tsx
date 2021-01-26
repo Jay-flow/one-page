@@ -6,10 +6,11 @@ interface PictureDescriptionProps {
     children?: String
     onClick?: Function
     pictureLocation?: "left" | "right"
+    className?: String
 }
 
 
-const PictureDescription = ({ onClick, pictureLocation, src, children, title }: PictureDescriptionProps) => {
+const PictureDescription = ({ onClick, pictureLocation, src, children, title, className }: PictureDescriptionProps) => {
     let flexDeriction = "md:flex-row"
     if (pictureLocation == "right") {
         flexDeriction = "md:flex-row-reverse"
@@ -19,7 +20,7 @@ const PictureDescription = ({ onClick, pictureLocation, src, children, title }: 
         spaceContent = "md:ml-6"
     }
     return (
-        <div className={`flex flex-col items-center h-full ${flexDeriction}`}>
+        <div className={`flex flex-col items-center h-full ${flexDeriction} ${className}`}>
             <div
                 className={`flex-shrink-0 w-full mb-6 md:w-1/3 h-60 md:mb-0 ${spaceContent}`}>
                 <div

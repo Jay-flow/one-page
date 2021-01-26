@@ -16,19 +16,11 @@ const Home = () => {
         setVisible(!_visible)
     }
 
-    const gifURL = [
-        "https://media2.giphy.com/media/xUA7aXlhmKHBNLH3jy/giphy.gif",
-        "https://media1.giphy.com/media/3o7TKVaf0pflGFzlzW/giphy.gif",
-        "https://media0.giphy.com/media/26ybxpXV89wqtPCow/giphy.gif",
-        "https://media2.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif"
-    ]
-
     return (
         <div className="h-full mx-auto overflow-y-scroll">
             <Modal visible={_visible} setVisible={setVisible} />
             <Head>
                 <title>One page</title>
-                <script src='https://kit.fontawesome.com/a076d05399.js'></script>
             </Head>
             <header className="w-full h-full mb-14">
                 <div className="flex items-center h-12 px-5 bg-gray-900">
@@ -39,7 +31,7 @@ const Home = () => {
                     src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                     title="One Page">
                     <p className="px-6 overflow-hidden text-center md:px-40">
-                        The computer is only a fast idiot; <br/>
+                        The computer is only a fast idiot; <br />
                         it has no imagination; it cannot originate action. It is, and will remain, only a tool of man.
                     </p>
                     <Button
@@ -95,11 +87,11 @@ const Home = () => {
                 className="mb-14"
                 style={{ height: "calc(100% - 3rem)" }}
                 src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" title="One Page">
-                <p className="px-6 overflow-hidden md:px-40">
+                <p className="overflow-hidden md:px-32">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
                 </p>
             </WatermarkImage>
-            <Section>
+            <Section className="mx-5 mb-5">
                 <PictureDescription
                     title="The forest"
                     src="https://media2.giphy.com/media/xUA7aXlhmKHBNLH3jy/giphy.gif"
@@ -107,7 +99,7 @@ const Home = () => {
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
             </PictureDescription>
             </Section>
-            <Section>
+            <Section className="mx-5 mb-5">
                 <PictureDescription
                     title="The forest"
                     src="https://media1.giphy.com/media/3o7TKVaf0pflGFzlzW/giphy.gif"
@@ -115,7 +107,7 @@ const Home = () => {
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
               </PictureDescription>
             </Section>
-            <Section>
+            <Section className="mx-5 mb-5">
                 <PictureDescription
                     title="The forest"
                     src="https://media0.giphy.com/media/26ybxpXV89wqtPCow/giphy.gif"
@@ -123,7 +115,7 @@ const Home = () => {
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
             </PictureDescription>
             </Section>
-            <Section className="mb-14">
+            <Section className="mx-5 mb-14">
                 <PictureDescription
                     title="The forest"
                     src="https://media2.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif"
@@ -131,7 +123,7 @@ const Home = () => {
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
               </PictureDescription>
             </Section>
-            <Section className="mb-14">
+            <Section className="mx-5 mb-14">
                 <Button className="w-full h-16" onClick={clickButtonHandling}>Submit</Button>
             </Section>
             <Footer />

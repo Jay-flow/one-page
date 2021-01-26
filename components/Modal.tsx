@@ -13,7 +13,7 @@ const Modal = ({ visible, setVisible }: ModalProps) => {
     const userInputhandling = () => {
 
     }
-    
+
     return (
         <div className={`${visible ? "visible" : "invisible"} fixed top-0 left-0 w-full z-10`}>
             <div className="flex flex-col justify-center min-h-screen py-6 bg-black bg-opacity-70 sm:py-12">
@@ -45,7 +45,7 @@ const Modal = ({ visible, setVisible }: ModalProps) => {
                             </div>
                             <div className="flex flex-col w-3/4">
                                 <textarea className="p-4 text-gray-500 resize-none rounded-xl" placeholder="Leave a message, if you want" value={userMessage} onChange={userInputhandling} />
-                                <button className="py-3 my-8 text-lg text-white bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl" onClick={() => setVisible(false)}>Rate now</but  ton>
+                                <button className="py-3 my-8 text-lg text-white bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl" onClick={() => setVisible(false)}>Rate now</button>
                             </div>
                         </div>
                         <div className="flex items-center justify-center h-20">

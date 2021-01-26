@@ -24,7 +24,7 @@ const WatermarkImage = (
             style={containerStyle}
         >
             <div className="absolute top-0 left-0 w-full h-full text-white bg-black bg-opacity-50">
-                <div className="flex flex-col items-center justify-center w-full h-full space-y-6">
+                <div className="flex flex-col items-center justify-center w-full h-full space-y-6 p-6">
                     <h1 className="text-5xl text-center align-middle">{title}</h1>
                     {children}
                 </div>
