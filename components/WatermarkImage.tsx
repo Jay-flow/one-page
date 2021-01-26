@@ -1,16 +1,15 @@
 import Button from "../components/Button"
 
 interface WaterMarkImageProps {
-    onClick?: Function
     src: String
     title: String
-    children?: String
+    children?: JSX.Element | JSX.Element[]
     style?: object
     className?: String
 }
 
 const WatermarkImage = (
-    { title, onClick, src, children, style, className }: WaterMarkImageProps
+    { title, src, children, style, className }: WaterMarkImageProps
 ) => {
 
     const containerStyle = style == null ? {
@@ -27,11 +26,7 @@ const WatermarkImage = (
             <div className="absolute top-0 left-0 w-full h-full text-white bg-black bg-opacity-50">
                 <div className="flex flex-col items-center justify-center w-full h-full space-y-6">
                     <h1 className="text-5xl text-center align-middle">{title}</h1>
-                    <p className="px-6 overflow-hidden md:px-40">{children}</p>
-                    {onClick != null ? <Button
-                        onClick={() => onClick()}
-                    >Apply</Button> : null
-                    }
+                    {children}
                 </div>
             </div>
         </div>
