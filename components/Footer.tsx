@@ -11,13 +11,13 @@ const Footer = () => {
         <footer className="flex flex-col items-center justify-center space-y-10 text-white bg-gray-900 h-1/3">
             <div className="flex space-x-10">
                 <a href="">
-                    <FontAwesomeIcon icon={faFacebook} className="w-10 h-10 text-white" />
+                    <FontAwesomeIcon icon={faFacebook} size="3x" className="text-white" />
                 </a>
                 <a href="">
-                    <FontAwesomeIcon icon={faInstagram} className="w-10 h-10 text-white" />
+                    <FontAwesomeIcon icon={faInstagram} size="3x" className="text-white" />
                 </a>
                 <a href="">
-                    <FontAwesomeIcon icon={faTwitter} className="w-10 h-10 text-white" />
+                    <FontAwesomeIcon icon={faTwitter}  size="3x" className="text-white" />
                 </a>
             </div>
             <div className="text-center">
