@@ -3,12 +3,10 @@ interface SectionProps {
     className?: string
 }
 
-const Section = ({ children, className }: SectionProps) => {
+const Section = ({ children, className }: SectionProps): JSX.Element => {
     return (
         <section className={className}>
-            <div className="container mx-auto">
-                {children}
-            </div>
+            <div className="container mx-auto">{children}</div>
         </section>
     )
 }

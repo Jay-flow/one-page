@@ -1,15 +1,15 @@
-import Head from "next/head"
-import WatermarkImage from "../components/WatermarkImage"
-import Card from "../components/Card"
-import Section from "../components/Section"
-import Profile from "../components/Profile"
-import PictureDescription from "../components/PictureDescription"
-import Button from "../components/Button"
-import Footer from "../components/Footer"
-import Modal from "../components/Modal"
-import { useState } from "react"
+import Head from 'next/head'
+import WatermarkImage from '../components/WatermarkImage'
+import Card from '../components/Card'
+import Section from '../components/Section'
+import Profile from '../components/Profile'
+import PictureDescription from '../components/PictureDescription'
+import Button from '../components/Button'
+import Footer from '../components/Footer'
+import Modal from '../components/Modal'
+import { useState } from 'react'
 
-const Home = () => {
+const Home = (): JSX.Element => {
     const [_visible, setVisible] = useState(false)
 
     const clickButtonHandling = () => {
@@ -27,17 +27,17 @@ const Home = () => {
                     <h1 className="text-white">Header</h1>
                 </div>
                 <WatermarkImage
-                    style={{ height: "calc(100% - 3rem)" }}
+                    style={{ height: 'calc(100% - 3rem)' }}
                     src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                     title="One Page">
                     <p className="px-6 overflow-hidden text-center md:px-40">
                         The computer is only a fast idiot; <br />
-                        it has no imagination; it cannot originate action. It is, and will remain, only a tool of man.
+                        it has no imagination; it cannot originate action. It is, and will remain,
+                        only a tool of man.
                     </p>
-                    <Button
-                        className="w-52"
-                        onClick={clickButtonHandling}
-                    >Click Button</Button>
+                    <Button className="w-52" onClick={clickButtonHandling}>
+                        Click Button
+                    </Button>
                 </WatermarkImage>
             </header>
             <Section className="mx-5 mb-14">
@@ -47,16 +47,28 @@ const Home = () => {
                 <div className="space-y-4 lg:space-y-0 lg:space-x-4 lg:flex">
                     <Card
                         title="UI,UX Concepts"
-                        src="https://images.unsplash.com/photo-1534269222346-5a896154c41d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas sapiente voluptate earum natus facilis dolor deserunt dolorum tempora obcaecati consequatur rem, vel distinctio perferendis tempore nemo sequi eos accusantium.</Card>
+                        src="https://images.unsplash.com/photo-1534269222346-5a896154c41d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas
+                        sapiente voluptate earum natus facilis dolor deserunt dolorum tempora
+                        obcaecati consequatur rem, vel distinctio perferendis tempore nemo sequi eos
+                        accusantium.
+                    </Card>
                     <Card
                         title="UI,UX Concepts"
-                        src="https://images.unsplash.com/photo-1509599589979-3b5a15d2816e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas sapiente voluptate earum natus facilis dolor deserunt dolorum tempora obcaecati consequatur rem, vel distinctio perferendis tempore nemo sequi eos accusantium.</Card>
+                        src="https://images.unsplash.com/photo-1509599589979-3b5a15d2816e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas
+                        sapiente voluptate earum natus facilis dolor deserunt dolorum tempora
+                        obcaecati consequatur rem, vel distinctio perferendis tempore nemo sequi eos
+                        accusantium.
+                    </Card>
                     <Card
                         title="UI,UX Concepts"
-                        src="https://images.unsplash.com/photo-1600026963373-695752903b3d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas sapiente voluptate earum natus facilis dolor deserunt dolorum tempora obcaecati consequatur rem, vel distinctio perferendis tempore nemo sequi eos accusantium.</Card>
+                        src="https://images.unsplash.com/photo-1600026963373-695752903b3d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas
+                        sapiente voluptate earum natus facilis dolor deserunt dolorum tempora
+                        obcaecati consequatur rem, vel distinctio perferendis tempore nemo sequi eos
+                        accusantium.
+                    </Card>
                 </div>
             </Section>
             <Section className="mx-5 mb-14">
@@ -85,9 +97,23 @@ const Home = () => {
             </Section>
             <WatermarkImage
                 className="h-full mb-14"
-                src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" title="One Page">
+                src="https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+                title="One Page">
                 <p className="overflow-hidden md:px-32">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                    fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                    Integer tincidunt. Cras dapibus. Vivamus elementum Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                    consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                    vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                    justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
+                    dapibus. Vivamus elementum
                 </p>
             </WatermarkImage>
             <Section className="mx-5 mb-5">
@@ -95,38 +121,60 @@ const Home = () => {
                     title="The forest"
                     src="https://media2.giphy.com/media/xUA7aXlhmKHBNLH3jy/giphy.gif"
                     pictureLocation="left">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-            </PictureDescription>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                    fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                </PictureDescription>
             </Section>
             <Section className="mx-5 mb-5">
                 <PictureDescription
                     title="The forest"
                     src="https://media1.giphy.com/media/3o7TKVaf0pflGFzlzW/giphy.gif"
                     pictureLocation="right">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-              </PictureDescription>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                    fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                </PictureDescription>
             </Section>
             <Section className="mx-5 mb-5">
                 <PictureDescription
                     title="The forest"
                     src="https://media0.giphy.com/media/26ybxpXV89wqtPCow/giphy.gif"
-                    pictureLocation="left" >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-            </PictureDescription>
+                    pictureLocation="left">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                    fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                </PictureDescription>
             </Section>
             <Section className="mx-5 mb-14">
                 <PictureDescription
                     title="The forest"
                     src="https://media2.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif"
                     pictureLocation="right">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-              </PictureDescription>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                    fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                </PictureDescription>
             </Section>
             <Section className="mx-5 mb-14">
-                <Button className="w-full h-16" onClick={clickButtonHandling}>Submit</Button>
+                <Button className="w-full h-16" onClick={clickButtonHandling}>
+                    Submit
+                </Button>
             </Section>
             <Footer />
-        </div >
+        </div>
     )
 }
 

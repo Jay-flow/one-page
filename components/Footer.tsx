@@ -1,12 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faFacebook,
-    faTwitter,
-    faInstagram
-} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
-
-const Footer = () => {
+const Footer = (): JSX.Element => {
     return (
         <footer className="flex flex-col items-center justify-center space-y-10 text-white bg-gray-900 h-1/3">
             <div className="flex space-x-10">
@@ -17,7 +12,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faInstagram} size="3x" className="text-white" />
                 </a>
                 <a href="">
-                    <FontAwesomeIcon icon={faTwitter}  size="3x" className="text-white" />
+                    <FontAwesomeIcon icon={faTwitter} size="3x" className="text-white" />
                 </a>
             </div>
             <div className="text-center">
