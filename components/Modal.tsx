@@ -80,8 +80,8 @@ const Modal = ({ visible, setVisible }: ModalProps): JSX.Element => {
     return (
         <div className={`${visible ? 'visible' : 'invisible'} fixed top-0 left-0 w-full z-10`}>
             <div className="flex flex-col justify-center min-h-screen py-6 bg-black bg-opacity-70 sm:py-12">
-                <div className="py-3 sm:max-w-xl sm:mx-auto">
-                    <div className="flex flex-col bg-white shadow-lg min-w-1xl rounded-xl">
+                <div className="p-6 mx-auto">
+                    <div className="flex flex-col bg-white shadow-lg rounded-xl">
                         <div className="px-12 py-5">
                             <h2 className="text-3xl font-semibold text-gray-800">
                                 Your opinion matters to us!
@@ -113,15 +113,6 @@ const Modal = ({ visible, setVisible }: ModalProps): JSX.Element => {
                                 Maybe later
                             </button>
                         </div>
-                    </div>
-
-                    <div className="mt-8 text-gray-700">
-                        Crédits{' '}
-                        <a
-                            className="font-bold"
-                            href="https://dribbble.com/shots/12052834-Rating-popup">
-                            Goga
-                        </a>
                     </div>
                 </div>
             </div>
